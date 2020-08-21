@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "c:\\Users\\laury\\OneDrive\\LBwebapp\\env\\Scripts\\python.exe"
+    "python.pythonPath": "c:\\Users\\laury\\OneDrive\\LBwebapp\\env\\Scripts\\python.exe",
+    "git.ignoreLimitWarning": true
 }

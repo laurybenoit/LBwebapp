@@ -1,0 +1,7 @@
+/* Try to understand your page css */
+html, body{
+    height: 100%;
+}
+.footer{
+    padding: 0%;
+}

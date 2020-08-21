@@ -1,0 +1,36 @@
+    <!-- Navigation section-->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="{{ url_for('home') }}">
+    <img src="static/images/Laury Benoit-logos_transparent2.png" width="80" height="80" class="d-inline-block align-middle" alt="Laury Benoit logo">
+    <font color="#34495E">Laury Benoit </font>
+  </a>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link home" href="{{ url_for('home') }}"><font color="#34495E">Home</font></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('about') }}"><font color="#34495E">About</font></a>
+    </li>
+      <!-- <a class="nav-link" href="{{ url_for('portfolio') }}"><font color="#34495E">Portfolio</font></a> -->
+    <li class="nav-item dropdown ml-auto">
+      <a class="nav-link dropdown-toggle" href="{{ url_for('portfolio') }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Portfolio
+
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="{{ url_for('projectone') }}">Project One</a>
+        <a class="dropdown-item" href="{{ url_for('projectetl') }}">Project ETL</a>
+        <a class="dropdown-item" href="{{ url_for('projecttwo') }}">Project Two</a>
+        <a class="dropdown-item" href="{{ url_for('projectsql') }}">Project SQL from IBM Learning</a>
+        <a class="dropdown-item" href="{{ url_for('finalproject') }}">Final Project </a>
+      </div>
+    </li>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('blog') }}"><font color="#34495E">Blog</font></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link contact" href="{{ url_for('contact') }}"><font color="#34495E">Contact</font></a>
+    </li>
+  </ul>
+</nav>

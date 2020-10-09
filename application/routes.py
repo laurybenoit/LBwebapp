@@ -50,9 +50,9 @@ def capstone():
 # def finalproject():
 #     return render_template("finalproject.html")
 
-# @app.route("/blog")
-# def blog():
-#     return render_template("blog.html")
+@app.route("/blog")
+def blog():
+    return render_template("blog.html")
 
 @app.route("/contact")
 def contact():

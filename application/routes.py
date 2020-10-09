@@ -26,13 +26,13 @@ def about():
 def portfolio():
     return render_template("portfolio.html")
 
-@app.route("/projectone") #need this to be a page in itself#
-def projectone():
-    return render_template("projectone.html")
+# @app.route("/projectone") #need this to be a page in itself#
+# def projectone():
+#     return render_template("projectone.html")
 
-@app.route("/projecttwo")
-def projecttwo():
-    return render_template("projecttwo.html")
+# @app.route("/projecttwo")
+# def projecttwo():
+#     return render_template("projecttwo.html")
 
 @app.route("/projectetl")
 def projectetl():
@@ -42,13 +42,17 @@ def projectetl():
 def projectsql():
     return render_template("projectsql.html")
 
-@app.route("/finalproject")
-def finalproject():
-    return render_template("finalproject.html")
+@app.route("/capstone")
+def capstone():
+    return render_template("capstone.html")
 
-@app.route("/blog")
-def blog():
-    return render_template("blog.html")
+# @app.route("/finalproject")
+# def finalproject():
+#     return render_template("finalproject.html")
+
+# @app.route("/blog")
+# def blog():
+#     return render_template("blog.html")
 
 @app.route("/contact")
 def contact():

@@ -2,11 +2,34 @@
 
 {% block content %}
 <!--would like to add a Transparent image and homepage info  -->
-<section>
 
-</section>
-This is my blog section
+<h1>Courses Taken Over The Past 3 Months </h1>
 
+<div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>Title</td>
+                <td>Description</td>
+                <td>Location</td>
+                <!-- <td><button>Sign up</button></td> -->
+            </tr>
+
+            <tbody>
+                {% for data in coursestaken %}
+                <tr>
+                    <td scope='row'>{{ data['Title'] }}</td>
+                    <td>{{ data['Description'] }}</td>
+                    <td>{{ data['Location'] }}</td>
+                    <!-- <td><button>Sign up</button></td> -->
+                </tr>
+                {% endfor %}
+            </tbody>
+        </thead>
+
+
+    </table>
+</div>
 
 <section>
 <!-- Subscribe option to get email data from individual -->
